@@ -8,7 +8,6 @@ public class DeleteOperation {
 
 
 class DeletePrintFormat extends CommonPrintFormat {
-
     public static String askName = "➤➤➤ 삭제하고 싶은 학생의 이름을 입력하세요.";
 
     public static void success(String name){

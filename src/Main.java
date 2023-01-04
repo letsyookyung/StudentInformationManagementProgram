@@ -6,10 +6,10 @@ import java.util.Scanner;
 
 public class Main {
     static boolean exitFlag = false;
-    static String  name = null, phoneNumber = null, address = null, email = null, grade = null;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        String  name = null, phoneNumber = null, address = null, email = null, grade = null;
 
         while (!exitFlag) {
             System.out.println(CommonPrintFormat.menuForm);
@@ -68,8 +68,8 @@ public class Main {
                     Field field = converterToFieldEnum(sc.nextLine());
 
                     System.out.println(UpdatePrintFormat.askHow);
-                    String value = sc.nextLine();
-                    UpdateOperation.update(new DataForUpdate(name, value, field));
+                    String valueForChange = sc.nextLine();
+                    UpdateOperation.update(new DataForUpdate(name, valueForChange, field));
                     break;
                 case DELETE:
                     System.out.println(DeletePrintFormat.askName);
@@ -87,7 +87,7 @@ public class Main {
                 case SELECT:
                     System.out.println(SelectPrintFormat.askField);
                     field = converterToFieldEnum(sc.nextLine());
-                    value = "";
+                    String value = "";
 
                     switch (field) {
                         case NAME :
