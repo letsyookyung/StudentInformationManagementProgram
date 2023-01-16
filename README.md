@@ -1,4 +1,4 @@
-Student Information Managing Program (학생 정보 관리 프로그램)
+### Student Information Managing Program (학생 정보 관리 프로그램)
 
 - 학생 이름에 따른 전화번호, 집주소, 이메일 주소, 성적 등의 정보를 관리
 - 학생 정보 등록/수정/삭제/검색/출력/프로그램 종료 포함
